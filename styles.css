@@ -50,8 +50,14 @@ a:hover .st0-nav {
   height: 120px;
 }
 
-.logo-h1 {
+#site-logo .logo-text {
   display: none;
+}
+
+.logo-h1 {
+  display: block;
+  color: #EAAA7F;
+  margin-bottom: 0;
 }
 
 .dogs {
@@ -120,14 +126,12 @@ footer {
 *  Media Queries *
 *****************/
 
-@media screen and (max-width: 420px){
+@media screen and (min-width: 420px){
   #site-logo .logo-text {
-    display: none;
+    display: inherit;
   }
 
   .logo-h1 {
-    display: block;
-    color: #EAAA7F;
-    margin-bottom: 0;
+    display: none;
   }
 }
